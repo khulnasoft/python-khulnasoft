@@ -14,4 +14,4 @@ jobs:
     - run: make build
     - run: venv-tools/bin/twine upload dist/*
       env:
-        TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+        TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
